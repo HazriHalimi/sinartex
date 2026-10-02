@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote | Sinar Tex Industries Malaysia</title>
+  <meta name="description" content="Submit your technical yarn requirements, volume specifications, and delivery timeline to receive an official commercial quotation from Sinar Tex Industries.">
+  <link rel="canonical" href="https://hazrihalimi.github.io/sinartex/request-quote.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="overrides.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <a class="brand" href="index.html" aria-label="Sinar Tex home">
+    <img src="assets/images/sinar-tex-logo.png" alt="Sinar Tex" class="brand-logo-img">
+    <span>SINAR <b>TEX</b><small>INDUSTRIES</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="manufacturing.html">Manufacturing</a>
+    <a href="sustainability.html">Sustainability</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a class="button button-red header-cta" href="request-quote.html">Request a Quote <i data-lucide="arrow-up-right"></i></a>
+  <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><i data-lucide="menu"></i></button>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="manufacturing.html">Manufacturing</a>
+    <a href="sustainability.html">Sustainability</a>
+    <a href="contact.html">Contact</a>
+    <a class="button button-red" href="request-quote.html">Request a Quote</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Page Banner -->
+  <section style="background: var(--navy); color: #fff; padding: 75px 0 50px;">
+    <div class="container">
+      <p class="eyebrow eyebrow-light">COMMERCIAL INQUIRIES</p>
+      <h1 style="font-size: clamp(32px, 4vw, 52px); margin-bottom: 14px;">Request an Official Yarn Quote</h1>
+      <p style="color: #cbd7e0; max-width: 680px; font-size: 16px; line-height: 1.7;">
+        Provide your target yarn count, fiber specification, estimated batch volume, and delivery destination. Our technical sales engineers respond within 24 business hours.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quote Form Section -->
+  <section class="section section-gray">
+    <div class="container" style="max-width: 860px; margin: auto;">
+
+      <!-- Quick Contact Banner -->
+      <div style="background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 20px 24px; margin-bottom: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px;">
+        <div>
+          <span style="font-size: 11px; font-weight: 700; color: var(--red); letter-spacing: 1px; display: block; margin-bottom: 2px;">DIRECT INQUIRIES</span>
+          <strong style="color: var(--navy); font-size: 14px; display: block;">Prefer to speak directly with our commercial desk?</strong>
+          <p style="color: var(--muted); font-size: 13px; margin: 4px 0 0;">
+            Call: <a href="tel:+60330814668" style="color: var(--navy); font-weight: 700;">+603-3081 4668</a> &nbsp;|&nbsp; Hours: Monday – Friday, 9:00 AM – 5:00 PM
+          </p>
+        </div>
+        <a href="contact.html" class="button button-navy" style="font-size: 11px; padding: 10px 18px;"><i data-lucide="map-pin"></i> Contact &amp; Directions</a>
+      </div>
+
+      <!-- Quote Form -->
+      <div style="background: #fff; padding: 40px; border: 1px solid var(--line); border-radius: 4px; box-shadow: 0 4px 18px rgba(11,42,74,0.06);">
+        <div style="margin-bottom: 28px; border-bottom: 1px solid var(--line); padding-bottom: 18px;">
+          <p class="eyebrow" style="margin-bottom: 6px;">SPECIFICATION FORM</p>
+          <h2 style="font-size: 26px; color: var(--navy);">Tell Us What You Need</h2>
+          <p style="color: var(--muted); font-size: 13px;">Fields marked with an asterisk (<span style="color:var(--red)">*</span>) are mandatory.</p>
+        </div>
+
+        <form id="quote-form" action="https://formspree.io/f/info@sinartex.com" method="POST">
+          <!-- Hidden field to identify this as a quote request -->
+          <input type="hidden" name="_subject" value="New Quote Request - Sinar Tex Industries">
+
+          <h3 style="font-size: 15px; color: var(--navy); margin-bottom: 16px; border-bottom: 1px solid var(--line); padding-bottom: 6px;">1. Your Contact &amp; Company Details</h3>
+
+          <div class="form-row" style="margin-bottom: 14px;">
+            <label style="display: block; color: var(--navy); font-size: 12px; font-weight: 700; margin-bottom: 6px;">
+              Contact Name <span style="color:var(--red)">*</span>
+              <input required name="name" style="width:100%; padding:12px; border:1px solid #dce1e4; margin-top:6px; font:13px Inter; outline:none;" placeholder="Full name">
+            </label>
+            <label style="display: block; color: var(--navy); font-size: 12px; font-weight: 700; margin-bottom: 6px;">
+              Company Name <span style="color:var(--red)">*</span>
+              <input required name="company" style="width:100%; padding:12px; border:1px solid #dce1e4; margin-top:6px; font:13px Inter; outline:none;" placeholder="Your manufacturing or trading entity">
+            </label>
+          </div>
+
+          <div class="form-row" style="margin-bottom: 24px;">
+            <label style="display: block; color: var(--navy); font-size: 12px; font-weight: 700; margin-bottom: 6px;">
+              Corporate Email <span style="color:var(--red)">*</span>
+              <input required type="email" name="email" style="width:100%; padding:12px; border:1px solid #dce1e4; margin-top:6px; font:13px Inter; outline:none;" placeholder="name@company.com">
+            </label>
+            <label style="display: block; color: var(--navy); font-size: 12px; font-weight: 700; margin-bottom: 6px;">
+              Phone Number (with Country Code)
+              <input name="phone" style="width:100%; padding:12px; border:1px solid #dce1e4; margin-top:6px; font:13px Inter; outline:none;" placeholder="+60 12-345 6789">
+            </label>
+          </div>
+
+          <h3 style="font-size: 15px; color: var(--navy); margin-bottom: 16px; border-bottom: 1px solid var(--line); padding-bottom: 6px;">2. Product &amp; Technical Specifications</h3>
+
+          <div class="form-row" style="margin-bottom: 14px;">
+            <label style="display: block; color: var(--navy); font-size: 12px; font-weight: 700; margin-bottom: 6px;">
+              Product Family / Material Type
+              <select name="product_type" style="width:100%; padding:12px; border:1px solid #dce1e4; margin-top:6px; font:13px Inter; outline:none; background:#fff;">
+                <option value="">-- General Specification / Custom Fabric &amp; Yarn --</option>
+                <option>Heavy-Duty PVC Coated Tarpaulin (650–900 GSM)</option>
+                <option>Architectural Tensile Membrane (PVDF Coated)</option>
+                <option>High-Tenacity Reinforcement Scrim &amp; Base Cloth</option>
+                <option>Industrial Air Ventilation &amp; Filtration Mesh</option>
+                <option>Marine Grade Solution-Dyed Protective Textile</option>
+                <option>Commercial Awning &amp; WeatherShield Textile</option>
+                <option>Polyurethane (PU) Coated Waterproof Fabric</option>
+                <option>Multi-Layer Thermal Laminated Barrier Textile</option>
+                <option>Ballistic Weave 1680D &amp; Heavy Oxford 600D</option>
+                <option>Antimicrobial Fluid-Barrier Hospital Textile</option>
+                <option>Military Tactical &amp; Flame-Retardant Fabric</option>
+                <option>High-Tenacity Polyester (HT-PET) Filament Yarn</option>
+                <option>Engineered Synthetic Blended Industrial Yarn</option>
+              </select>
+            </label>
+            <label style="display: block; color: var(--navy); font-size: 12px; font-weight: 700; margin-bottom: 6px;">
+              Intended Application
+              <input name="application" style="width:100%; padding:12px; border:1px solid #dce1e4; margin-top:6px; font:13px Inter; outline:none;" placeholder="e.g. Tarpaulin, Outdoor Canopy, Conveyor Reinforcement">
+            </label>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <label style="display: block; color: var(--navy); font-size: 12px; font-weight: 700; margin-bottom: 6px;">
+              Estimated Order Volume (e.g. 5,000 meters / 10 Metric Tons / Annual Contract)
+              <input name="quantity" style="width:100%; padding:12px; border:1px solid #dce1e4; margin-top:6px; font:13px Inter; outline:none;" placeholder="e.g. 10,000 Linear Meters or 15 Metric Tons">
+            </label>
+          </div>
+
+          <div style="margin-bottom: 28px;">
+            <label style="display: block; color: var(--navy); font-size: 12px; font-weight: 700; margin-bottom: 6px;">
+              Detailed Requirements &amp; Target Specifications <span style="color:var(--red)">*</span>
+              <textarea required name="requirements" rows="5" style="width:100%; padding:12px; border:1px solid #dce1e4; margin-top:6px; font:13px Inter; outline:none; resize:vertical;" placeholder="Specify target weight (GSM), coating type (PVC / PU / Acrylic), yarn count/denier, width, color, fire rating (NFPA 701/DIN 4102), roll length, or delivery timeline..."></textarea>
+            </label>
+          </div>
+
+          <div>
+            <button class="button button-red" type="submit" style="padding: 14px 32px; font-size: 13px;">
+              Submit Request for Quotation <i data-lucide="send"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <a class="brand brand-footer" href="index.html" style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+        <img src="assets/images/sinar-tex-logo.png" alt="Sinar Tex Industries" class="brand-logo-img">
+        <span>SINAR <b>TEX</b><small>INDUSTRIES</small></span>
+      </a>
+      <p>Malaysia's Trusted Yarn Manufacturing Partner Since 2002</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="manufacturing.html">Manufacturing</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="request-quote.html">Request a Quote</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="mailto:info@sinartex.com">info@sinartex.com</a>
+      <a href="tel:+60330814668">+603-3081 4668</a>
+      <span style="line-height:1.5;color:#afbdc9;font-size:12px;margin:8px 0;display:block;">PT18157 &amp; PT18158, Jalan Nuri Kawasan Perusahaan, Jln Kebun Baru Batu 9, Kampung Kebun Baru, 42500 Telok Panglima Garang, Selangor, Malaysia</span>
+      <a href="https://www.google.com/maps/search/?api=1&query=PT18157+%26+PT18158%2C+Jalan+Nuri+Kawasan+Perusahaan%2C+Jln+Kebun+Baru+Batu+9%2C+Kampung+Kebun+Baru%2C+42500+Telok+Panglima+Garang%2C+Selangor%2C+Malaysia" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:5px;color:#f06673;font-weight:700;font-size:11px;margin-top:4px;text-decoration:none;"><i data-lucide="navigation" style="width:13px;height:13px;"></i> Get Directions</a>
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <div class="socials">
+        <a href="https://www.linkedin.com/company/sinar-tex-industries" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="https://www.facebook.com/sinartexindustries" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+        <a href="https://www.instagram.com/sinartex" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; 2025 SINAR TEX INDUSTRIES SDN. BHD. All rights reserved.</span>
+    <span>Yarn Manufacturer Malaysia</span>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>
